@@ -6,11 +6,18 @@ use App\Controllers\BaseController;
 
 class LoginController extends BaseController
 {
+
 	public function index()
 	{
 		$db = \Config\Database::connect();
 		$builder = $db->table('site_settings');
 		$query   = $builder->get()->getResultArray();
 		echo view("\Modules\Login\Views\Login_view",$query[0]);
+	}
+
+	public function verify()
+	{
+    $userModel = new \Modules\Login\Models\Login_model();
+
 	}
 }

@@ -33,9 +33,9 @@ class Database extends Config
 	public $default = [
 		'DSN'      => '',
 		'hostname' => 'localhost',
-		'username' => 'admin',
+		'username' => 'newuser',
 		'password' => 'password',
-		'database' => 'newsite2021',
+		'database' => 'newsite_2021',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,
